@@ -1,7 +1,7 @@
 # Reworked BFMC Dashboard
 
 ## Project Overview
-Welcome! This project is an enhanced version of the original BFMC Dashboard found on their [GitHub](https://github.com/ECC-BFMC/Computer/tree/main/Dashboard). It has been redesigned to offer improved usability, additional features, and a more sleek design. It was also featured on the semifinals of the BFMC 2024 Edition.
+Welcome! This project is an enhanced version of the original BFMC Dashboard found on their [GitHub](https://github.com/ECC-BFMC/Computer/tree/main/Dashboard). It has been redesigned to offer improved usability, additional features, and a more sleek design. It was also featured on the semifinals of the BFMC 2024 Edition. The project is now ROS Based, only the buttons can be configured to send serial commands via the [Brain](https://github.com/ECC-BFMC/Brain?tab=readme-ov-file).
 
 ## Key Features
 - **Fully redesigned**: New UI, redesigned to look like a digital modern dashboard.
@@ -18,6 +18,8 @@ Welcome! This project is an enhanced version of the original BFMC Dashboard foun
 ## Installation & Using the Dashboard
 ### Server Side (The Car):
 
+Copy the files inside of the "server" folder on your Raspberry Pi/Jetson, and configure the IP & Ports for each script, according your needs.
+
 ```bash
 # In Separate terminals (Update with all sockets in one file coming soon)
 
@@ -28,6 +30,7 @@ python3 spd_dash.py # Starts to read the Speed ROS Topic and launchs the socket.
 ```
 ### Client Side (The Computer that will run the Dashboard):
 
+Clone the repository and configure the IP & Ports for each socket, according your needs. All of them are located in `GUI/DashBoard.py`, except for an particular one(the SSH one), located in `objects/Button.py`
 ```bash
 # Clone the repository.
 git clone https://github.com/okspy47/bfmc-dashboard
