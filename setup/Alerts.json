@@ -1,0 +1,32 @@
+{    "names" : {
+        "Prioritysign": 3,
+        "Parkingsign": 3,
+        "Crosswalksign": 3,
+        "Highwayentrancesign": 2,
+        "Highwayexitsign": 3,
+        "Onewayroadsign": 3,
+        "Round-aboutsign": 3,
+        "No-entryroadsign": 3,
+        "Stopsign": 3,
+        "carParking": 3,
+        "Car": 3,
+        "Pedestrian": 3,
+        "pedOnCross": 3
+    },
+
+    "values" : {
+        "Stopsign": "True",
+        "Parkingsign": "True",
+        "Crosswalksign": "True",
+        "Highwayentrancesign": "True",
+        "Highwayexitsign":"True",
+        "Round-aboutsign": "True",
+        "Onewayroadsign": "True",
+        "Car":"True",
+        "carParking": "True",
+        "No-entryroadsign": "True",
+        "Prioritysign": "True",
+        "Pedestrian": "True",
+        "pedOnCross": "True"
+    }
+}
